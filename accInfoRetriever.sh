@@ -23,7 +23,7 @@ aws account get-account-information
 
 aws s3 ls
 
-# lists EC2 instances provisioned
+# lists EC2 instances' IDs provisioned
 
 aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
